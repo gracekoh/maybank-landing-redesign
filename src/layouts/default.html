@@ -1,0 +1,91 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Maybank2u.com</title>
+      <link rel="apple-touch-icon" sizes="57x57" href="{{root}}assets/img/favicons/apple-touch-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="{{root}}assets/img/favicons/apple-touch-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="{{root}}assets/img/favicons/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="{{root}}assets/img/favicons/apple-touch-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="{{root}}assets/img/favicons/apple-touch-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="{{root}}assets/img/favicons/apple-touch-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="{{root}}assets/img/favicons/apple-touch-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="{{root}}assets/img/favicons/apple-touch-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="{{root}}assets/img/favicons/apple-touch-icon-180x180.png">
+      <link rel="icon" type="image/png" href="{{root}}assets/img/favicons/favicon-32x32.png" sizes="32x32">
+      <link rel="icon" type="image/png" href="{{root}}assets/img/favicons/android-chrome-192x192.png" sizes="192x192">
+      <link rel="icon" type="image/png" href="{{root}}assets/img/favicons/favicon-96x96.png" sizes="96x96">
+      <link rel="icon" type="image/png" href="{{root}}assets/img/favicons/favicon-16x16.png" sizes="16x16">
+      <link rel="manifest" href="{{root}}assets/img/favicons/manifest.json">
+      <link rel="mask-icon" href="{{root}}assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="msapplication-TileImage" content="{{root}}assets/img/favicons/mstile-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+      <link href='https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="{{root}}assets/js/slick/slick.css"/>
+      <link rel="stylesheet" href="{{root}}assets/js/slick/slick-theme.css"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+      <link rel="stylesheet" href="{{root}}assets/css/app.css">
+   </head>
+   <body>
+      <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="large">
+         <button class="menu-icon" type="button" data-toggle></button>
+         <div class="title-bar-title">
+            <img src="assets/img/logo.png" alt="" />
+         </div>
+         <div class="top-bar-login"><a href="">Login <i class="fa fa-user fa-lg" aria-hidden="true"></i></a></div>
+      </div>
+      </div>
+      <div class="top-bar" id="example-menu">
+         <div class="top-bar-left ">
+            <div class="logo float-center show-for-large">
+               <a href=""><img src="assets/img/logo.png" alt="" /></a>
+            </div>
+         </div>
+         <div class="top-bar-right">
+            <div class="menu-centered">
+               <ul class="dropdown menu" data-dropdown-menu>
+                  <li><a href="#">Accounts & Banking</a></li>
+                  <li><a href="#">Cards</a></li>
+                  <li><a href="#">Investment</a></li>
+                  <li><a href="#">Insurance</a></li>
+                  <li><a href="#">Loans</a></li>
+                  <li><a href="#">Other Services</a></li>
+                  <li><a href="#">Customer Service</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+    {{> body}}
+    <footer class="row expanded align-middle">
+       <div class="small-12 large-9 columns">
+          <ul class="menu">
+             <li><a href="#">Accounts & Banking</a></li>
+             <li><a href="#">Cards</a></li>
+             <li><a href="#">Investment</a></li>
+             <li><a href="#">Insurance</a></li>
+             <li><a href="#">Loans</a></li>
+             <li><a href="#">Other Services</a></li>
+             <li><a href="#">Customer Service</a></li>
+          </ul>
+       </div>
+       <div class="social-media small-12 large-3 columns">
+          <h6>Connect with Us</h6>
+          <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>
+          <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+          <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+          <i class="fa fa-google-plus-square fa-lg" aria-hidden="true"></i>
+          <i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i>
+       </div>
+       <div class="copyright text-center columns">© 2001-2016 Malayan Banking Berhad (Company No, 3813-K). All rights reserved.</div>
+    </footer>
+    <script src="{{root}}assets/js/app.js"></script>
+    <script src="{{root}}assets/js/slick/slick.js"></script>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
+  </body>
+</html>

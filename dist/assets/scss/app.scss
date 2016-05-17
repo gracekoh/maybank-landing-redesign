@@ -1,0 +1,329 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+//@include foundation-grid;
+@include foundation-flex-classes;
+@include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+//@include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+.top-bar {
+    padding: 1em
+}
+.top-bar,
+.top-bar ul {
+    background-color: #000;
+}
+.top-bar a {
+    color: #FCD705
+}
+#hero {
+    position: relative;
+}
+.loginbox {
+    width: 240px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    right: 65px;
+    z-index: 20;
+    padding: 0.4em 0.8em;
+}
+.loginbox form {
+    z-index: 500
+}
+.loginbox input {
+    background: rgba(0, 0, 0, 0.3);
+    border: 0;
+    border-radius: 4px;
+}
+.top-bar-right {
+    color: #FFD302;
+}
+.menu > li > a {
+    font-weight: bold;
+    letter-spacing: 1px
+}
+.menu > li > a:hover {
+    border-bottom: 2px solid #FFD302;
+}
+.more {
+    color: #f0c83d;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 0.8em
+}
+.fa-user {
+    margin-left: 0.5em;
+    color: #FFD302;
+}
+.loginbox h4 {
+    color: #FFD302;
+    border-bottom: 1px solid #FFD302;
+    padding-bottom: 0.3em;
+    margin-bottom: 0.7em
+}
+.latest-news {
+    border-left: 5px solid #FFD302;
+}
+.news::after {
+    content: '';
+    width: 90%;
+    border-top: 1px solid #c4c4c4;
+    display: block;
+    margin-top: 2em
+}
+.latest-news-title {
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin-right: 0.5em
+}
+.image-grid {
+    position: relative;
+    cursor: pointer;
+}
+.button.hollow.yellow {
+    color: #FFD302;
+    border: 1px solid #FFD302;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px
+}
+.tinted-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.tinted-image:hover {
+    background: rgba(252, 215, 5, 0.7);
+    transition: background 0.5s ease;
+}
+.overlay-text {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+.tinted-image h4:after {
+    content: '';
+    width: 25px;
+    border-top: 2px solid #fff;
+    display: block;
+    margin: 0.7em auto;
+}
+.overlay-text a {
+    color: white;
+}
+.overlay-text-hover {
+    top: 30%;
+    transition: top 0.7s ease;
+}
+.overlay-text-hover a {
+    color: black;
+}
+.shortcut {
+    background: #FFD302;
+    border-radius: 5px;
+    padding: 1em 1em 0 1em;
+    margin: 4em auto
+}
+.shortcut h6 {
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5em;
+    padding-top: 0.3em;
+}
+.hero-carousel {
+    position: relative;
+    cursor: pointer;
+}
+.hero-carousel h2 {
+    position: absolute;
+    top: 2.5em;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.1em 0.2em;
+    color: white;
+}
+.hero-carousel h5 {
+    position: absolute;
+    top: 8.5em;
+    color: white;
+    padding: 0 0.5em
+}
+.button {
+    font-family: 'Lato', sans-serif;
+}
+.button.black {
+    background: black;
+    color: #FFD302;
+    font-weight: bold;
+    border-radius: 3px;
+}
+body {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 300;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+footer {
+    background: #FFD302;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+footer .copyright {
+    margin-top: 1.2em
+}
+.slick-prev {
+    left: 15px;
+}
+.slick-next {
+    right: 15px;
+}
+.slick-prev:before,
+.slick-next:before {
+    font-size: 35px;
+}
+.slick-prev,
+.slick-next {
+    color: white;
+    width: 35px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 10;
+}
+.top-bar-login {
+    display: inline-block;
+    float: right;
+}
+.top-bar-login a {
+    font-weight: bold;
+    color: #FFD302
+}
+footer .menu a {
+    color: #000
+}
+.social-media i {
+    margin-right: 0.5em
+}
+/* Small only */
+
+@media screen and (max-width: 39.9375em) {
+    .slick-prev:before,
+    .slick-next:before {
+        display: none
+    }
+    .hero-carousel h2 {
+        top: inherit;
+        bottom: 70px
+    }
+    .hero-carousel h5 {
+        top: inherit;
+        bottom: 40px
+    }
+}
+/* Small and medium */
+
+@media screen and (max-width: 63.9375em) {
+    .shortcut {
+        margin: 1.5em auto 0
+    }
+    #shortcutContainer {
+        margin-bottom: 2em;
+    }
+    .title-bar-title img {
+        width: 200px;
+    }
+    .news {
+        margin-top: 1em
+    }
+    .news::after {
+        margin-top: 1em
+    }
+    .menu > li {
+        display: block;
+    }
+    .top-bar-right {
+        float: none
+    }
+    .social-media {
+        margin: 1em auto;
+        padding: 0.3rem 1.5rem;
+    }
+}
+/* Medium only */
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .hero-carousel h2 {
+        font-size: 2.0rem;
+        top: inherit;
+        bottom: 40px
+    }
+    .hero-carousel h5 {
+        top: inherit;
+        bottom: 10px
+    }
+}
